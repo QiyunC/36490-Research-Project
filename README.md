@@ -2,13 +2,13 @@
 
 Code for the 36-490 statistics research project class at CMU.
 
-This is a group project centered around Forgery Detection of 1649 English newsbooks. Here I have uploaded my part of the code. This code mainly performs feature selection.
+This is a group project centered around Forgery Detection of 1649 English newsbooks. 
 
-This code reads in the csv files with information on different pieces of texts and chooses the features that are best at predicting Ideology for a given text. After these features are generated, we can run dimension reduction algorithms like PCA and visualize on 2D plots whether given a particular Ideology group, some texts differ in features from the main groups of texts to pick out the potential forgery candidates.
+## Feature Selection
 
-## Notes on Functionalities Within and Usages of Files
+This notebook reads in the csv files with information on different pieces of texts and chooses the features that are best at predicting Ideology for a given text. After these features are generated, we can run dimension reduction algorithms like PCA and visualize on 2D plots whether given a particular Ideology group, some texts differ in features from the main groups of texts to pick out the potential forgery candidates.
 
-### The notebook `dataunzip_tfidf_jaccard`:
+## The notebook `dataunzip_tfidf_jaccard`:
 
 This notebook contains functions to unzip an archive of newsbooks, analyze the enumeration of all of the `.txt` files to determine the number of available newsbooks, collate them into all possible pairs, aggregate their contents to create a lexicon, develop vectors of weightining of lexical importance for each word in each newsbook, and compute the weighted Jaccard Index of similarity (on a scale of 0 (nothing) to 1 (identical)) for each one of the (all possible) pairs. 
 
